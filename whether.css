@@ -161,6 +161,12 @@ li a{
     border-radius: 10px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.381); 
 }
+.temp-details{
+    width: 200px;
+    height: 200px;
+    border: red solid 2px;
+    
+}
 .prid{
     width:420px;
     height: 180px;
