@@ -153,11 +153,13 @@ li a{
     
 }
 .temp{
-    border: 2px red solid; 
+    
     width: 420px;
     height: 250px;
     margin-top: auto;
     margin-left: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.381); 
 }
 .prid{
     width:420px;
