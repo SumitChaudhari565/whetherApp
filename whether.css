@@ -25,7 +25,7 @@ body{
     width: 150px;
     border: 0;
     height: 5px; /* Thickness of the line */
-    background: white;
+    background: #ffffff;
     border-radius: 10px;
 }
 .inp {
@@ -153,47 +153,65 @@ li a{
     
 }
 .temp{
-    
+    /* border: blue solid 2px; */
     width: 420px;
     height: 250px;
     margin-top: auto;
     margin-left: 40px;
     border-radius: 10px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.381); 
+    display: flex;
+    align-items: center;
 }
 .temp-details{
     width: 200px;
     height: 200px;
     border: red solid 2px;
     position: relative;
-    
+    flex: 1;
 }
 #degree{
     position: absolute;
-    top: 10%;
-    left: 15%;
+    top: 5%;
+    left: 18%;
     font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#i{
+    font-family: 'Courier New', Courier, monospace;
 }
 #d1{
     position: absolute;
-    top: 40%;
-    left: 15%;
+    top: 30%;
+    left: 18%;
     padding-top: 15px;
     padding-right: 10px;
-    font-size: 30px;
+    font-size: 35px;
 }
 #logo{
     position: absolute;
     top: 63%;
-    right: 10%;
+    right: 7%;
 }
-#d2{
+#date{
     position: absolute;
     top: 65%;
-    left: 15%;
+    left: 18%;
     padding-top: 15px;
     padding-right: 10px;
-    color: rgba(193, 186, 186, 0.882);
+    color: black;
+}
+.vertical-divider {
+    width: 3px;
+    border-radius: 5px;
+    background-color: lightgray;  /* Change color as needed */
+    height: 90%; /* Adjust height as needed */
+    margin: 0 10px; /* Adjust margin as needed */
+    display: inline-block;
+    vertical-align: top;
+}
+.additional-details {
+    flex: 1;
 }
 .prid{
     width:420px;
