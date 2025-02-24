@@ -17,7 +17,7 @@ body {
     color: rgb(255, 255, 255);
     font-size: 33px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); */
 }
 
 #separator {
@@ -226,26 +226,93 @@ li a {
     flex: 1;
     display: flex;
     flex-direction: column;
-     /* Distribute space evenly */
-     margin-top: 40px;
-
+    /* Distribute space evenly */
+    margin-top: 40px;
 }
 
 .additional-details h5 {
-    margin : 0; /* Remove any margin */
+    margin: 0; /* Remove any margin */
     padding: 0;
     padding-left: 20px;
     padding-top: 8px; /* Remove any padding */
     font-size: 15px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: gray;
+    font-family: fantasy;
+}
+
+#DayH {
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 40px;
+    padding-top: 8px;
+    color: black;
 }
 
 .prid {
     width: 420px;
     height: 180px;
-    margin-top: 80px;
-    border: 2px solid red;
+    margin-top: 30px;
+    /* border: 2px solid red; */
     margin-left: 40px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    display: flex;
+    align-items: center;
+}
+
+.prid-details {
+    display: flex;
+    flex-direction: row; /* Arrange cards in a row */
+    gap: 10px; /* Space between cards */
+    margin-left: 5px;
+}
+
+.card {
+    width: 110px;
+    height: 130px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.38);
+    padding: 10px;
+    background-color: white;
+    flex-shrink: 0; /* Prevent cards from shrinking */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth effect */
+}
+
+.card:hover {
+    transform: scale(1.08); /* Zoom in on hover */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.card h3 {
+    padding-top: 10px;
+    padding-left: 5px;
+    margin: 0;
+    font-size: 28px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card h2 {
+    padding-top: 15px;
+    padding-left: 5px;
+    margin: 0;
+}
+
+.card h5 {
+    margin: 0;
+    padding-left: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.weather-result {
+    display: flex;
+    align-items: center;
+}
+
+.weather-icon {
+    padding-top: 15px;
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
 }
 
 .tab2 {
