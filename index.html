@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="normalize.css"> <!-- Include Normalize.css for cross-browser consistency -->
+    <link rel="stylesheet" href="whether.css">
+    <script src="whether.js" defer></script>
+</head>
+<body>
+    <div class="p1">
+       <div class="inp">
+        <div class="imgcon">
+           <h2 id="headline">The Only Weather Forecast You Need</h2>
+           <hr id="separator">
+           <div class="search-bar">
+             <input type="text" id="sbar" placeholder="Enter Location">
+             <button id="search-btn">
+              <img src="serchbar-removebg-preview.png" alt="Search" id="search-icon">
+             </button>
+          </div>
+          <div id="loading" style="display: none;">Loading...</div> <!-- Loading indicator -->
+         </div>
+        </div>
+       <div class="con2">
+        <div class="data">
+            <div class="head">
+                <li><a href="">Weather</a></li>
+               <li><a href="">Aqi</a></li>
+               <li><a href="">Panchang</a></li>
+               <li><a href="">About</a></li>
+            </div>
+          </div>
+          
+          <div class="tab1">
+            <h2 id="day">Today</h2>
+            <div class="temp">
+              <div class="temp-details">
+                <h3 id="degree">32<sup id="i">0</sup></h3>
+                <h3 id="d1" style="display: inline-block;">Sunny</h3> <img id="logo" src="img.jpg" width="50">
+                <h5 id="date">Monday 2025</h5>
+              </div>
+              <div class="vertical-divider"></div> <!-- New vertical divider -->
+              <div class="additional-details">
+                  <h5>RealFeel: <span id="01">0</span></h5>
+                  <h5>Humidity: <span id="02">0</span></h5>
+                  <h5>UV Index: <span id="03">0</span></h5>
+                  <h5>Visibility:<span id="04">0</span></h5>
+                  <h5>UV Index: <span id="05">0</span></h5>
+                  <h5>Wind: <span id="06">0</span></h5>
+              </div>
+            </div>
+            <h2 id="DayH">Daily</h2>
+            <div id="line"></div>
+            <div class="prid">
+              <div class="prid-details">
+                <div class="card">
+                  <h3 id="day1">30<sup id="i">0</sup></h3>
+                  <div class="weather-result">
+                    <h2 id="weather1">Sunny</h2>
+                    <img src="sunny.png" alt="Sunny" class="weather-icon">
+                  </div>
+                  <h5 id="prDate1">Mon 19, July</h5>
+                </div>
+                <div class="card">
+                  <h3 id="day2">28<sup id="i">0</sup></h3>
+                  <div class="weather-result">
+                    <h2 id="weather2">Rain</h2>
+                    <img src="rain.png" alt="Rain" class="weather-icon">
+                  </div>
+                  <h5 id="prDate2">Tue 20, July</h5>
+                </div>
+                <div class="card">
+                  <h3 id="day3">29<sup id="i">0</sup></h3>
+                  <div class="weather-result">
+                    <h2 id="weather3">Cloudy</h2>
+                    <img src="cloudy.png" alt="Cloudy" class="weather-icon">
+                  </div>
+                  <h5 id="prDate3">Wed 21, July</h5>
+                </div>
+                <div class="card">
+                  <h3 id="day4">31<sup id="i">0</sup></h3>
+                  <div class="weather-result">
+                    <h2 id="weather4">Sunny</h2>
+                    <img src="sunny.png" alt="Sunny" class="weather-icon">
+                  </div>
+                  <h5 id="prDate4">Thu 22, July</h5>
+                </div>
+                <div class="card">
+                  <h3 id="day5">27<sup id="i">0</sup></h3>
+                  <div class="weather-result">
+                    <h2 id="weather5">Storm</h2>
+                    <img src="storm.png" alt="Storm" class="weather-icon">
+                  </div>
+                  <h5 id="prDate5">Fri 23, July</h5>
+                </div>
+                <div class="card">
+                  <h3 id="day6">26<sup id="i">0</sup></h3>
+                  <div class="weather-result">
+                    <h2 id="weather6">Rain</h2>
+                    <img src="rain.png" alt="Rain" class="weather-icon">
+                  </div>
+                  <h5 id="prDate6">Sat 24, July</h5>
+                </div>
+                <div class="card">
+                  <h3 id="day7">25<sup id="i">0</sup></h3>
+                  <div class="weather-result">
+                    <h2 id="weather7">Cloudy</h2>
+                    <img src="cloudy.png" alt="Cloudy" class="weather-icon">
+                  </div>
+                  <h5 id="prDate7">Sun 25, July</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab2"></div>
+          <div class="tab3"></div>
+        </div>
+       
+    </div>
+    <!-- <button id="b1" onclick="fetchData()">click me</button> -->
+</body>
+</html>

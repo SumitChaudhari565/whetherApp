@@ -191,7 +191,7 @@ li a {
     left: 18%;
     padding-top: 15px;
     padding-right: 10px;
-    font-size: 28px;
+    font-size: 35px;
 }
 
 #logo {
@@ -237,7 +237,7 @@ li a {
     padding-top: 8px; /* Remove any padding */
     font-size: 15px;
     color: gray;
-    font-family: fantasy;
+    font-family: sans-serif;
 }
 
 #DayH {
@@ -249,7 +249,7 @@ li a {
 }
 
 .prid {
-    width: 430px;
+    width: 420px;
     height: 180px;
     margin-top: 30px;
     /* border: 2px solid red; */
@@ -263,8 +263,6 @@ li a {
     display: flex;
     flex-direction: row; /* Arrange cards in a row */
     gap: 10px; /* Space between cards */
-    margin-left: 5px;
-   
 }
 
 .card {
@@ -310,10 +308,9 @@ li a {
 }
 
 .weather-icon {
-    padding-top: 15px;
     width: 20px;
     height: 20px;
-    margin-left: 8px;
+    margin-left: 5px;
 }
 
 .tab2 {
